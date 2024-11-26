@@ -12,7 +12,7 @@ box-sizing: border-box;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-image: url("https://peakbusinessvaluation.com/wp-content/uploads/how-to-value-a-grocery-store-or-supermarket-980x653.webp"); */
+ background-image: url("https://peakbusinessvaluation.com/wp-content/uploads/how-to-value-a-grocery-store-or-supermarket-980x653.webp"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
