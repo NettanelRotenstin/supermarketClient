@@ -1,4 +1,3 @@
-import React from 'react'
 import './CartIcon.css'
 import { RootState, useAppSelector } from '../../redux/store'
 import { useNavigate } from 'react-router-dom'

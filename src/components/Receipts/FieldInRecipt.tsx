@@ -1,4 +1,3 @@
-import React from 'react'
 import { recipt } from '../../types/recipt'
 import './FieldInRecipt.css'
 interface props{

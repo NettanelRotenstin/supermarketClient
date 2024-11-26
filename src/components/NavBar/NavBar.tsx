@@ -1,7 +1,5 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAppSelector } from '../../redux/store'
-import userState from '../../types/userState'
 import './NavBar.css'
 import CartIcon from '../CartIcon/CartIcon'
 import Logo from '../Logo/Logo'

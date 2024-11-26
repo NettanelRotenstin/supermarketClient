@@ -1,4 +1,3 @@
-import React from 'react'
 import './CategoryCard.css'
 import { useNavigate } from 'react-router-dom'
 interface Props {

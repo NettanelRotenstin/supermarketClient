@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import   { useEffect, useState } from "react";
 import "./Register.css";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 import { useNavigate } from "react-router-dom";
-import { fetchRegister, logout, returnStatusToIdle } from "../../redux/slices/userSlice";
+import { fetchRegister , returnStatusToIdle } from "../../redux/slices/userSlice";
 import { dataStatus } from "../../types/redux";
 
 export default function Register() {
-    const { status, user, error } = useAppSelector((state) => state.user);
+    const { status, user } = useAppSelector((state) => state.user);
     const navigate = useNavigate();
     const dispatch = useAppDispatch();
     const [username, setUsername] = useState("");

@@ -1,17 +1,16 @@
 import {
-  Action,
+   
   ActionReducerMapBuilder,
   createAsyncThunk,
   createSlice,
   PayloadAction,
 } from "@reduxjs/toolkit";
 import { dataStatus } from "../../types/redux";
-import { IUser } from "../../types/user";
-import userState from "../../types/userState";
+ 
 import { cartState } from "../../types/cartState";
 import { ICart } from "../../types/cart";
 
-const port = import.meta.env.VITE_PORT;
+ import.meta.env.VITE_PORT;
 const initialData: cartState = {
   error: null,
   status: dataStatus.IDLE,

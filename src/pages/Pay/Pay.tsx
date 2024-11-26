@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import   { useState } from "react";
 import "./Pay.css";
 import { useNavigate } from "react-router-dom";
 import { RootState, useAppDispatch, useAppSelector } from "../../redux/store";
-import { ICart } from "../../types/cart";
 import { checkout } from "../../redux/slices/cartSlice";
 
 export default function Pay() {

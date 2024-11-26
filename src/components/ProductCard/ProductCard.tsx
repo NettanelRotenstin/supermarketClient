@@ -21,7 +21,7 @@ interface Props {
 }
 
 export default function ProductCard(prop: Props) {
-  const { _id, name, img, category, price, quantity, prevPrice, description } = prop.product;
+  const { _id, name, img, price, quantity,   description } = prop.product;
   const user = useAppSelector((state) => state.user.user);
   const dispatch = useAppDispatch();
   const [quantitySelected, setQuantitySelected] = useState(1);

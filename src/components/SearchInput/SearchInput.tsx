@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import './SearchInput.css'
 import { useAppDispatch, useAppSelector } from '../../redux/store'
 import { fetchByName } from '../../redux/slices/productSlice'

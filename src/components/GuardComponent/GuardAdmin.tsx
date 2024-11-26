@@ -1,6 +1,5 @@
 import React from 'react'
 import { useAppSelector } from '../../redux/store'
-import Forbiden from '../Forbidden/Forbidden'
 import Forbidden from '../Forbidden/Forbidden'
 import { administratorsEnum } from '../../types/enum/administrotorsEnum'
 interface Props {

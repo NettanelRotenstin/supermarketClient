@@ -1,4 +1,3 @@
-import React from 'react'
 import './Forbidden.css'
 
 export default function Forbidden() {

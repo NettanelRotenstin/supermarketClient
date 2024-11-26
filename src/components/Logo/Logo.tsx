@@ -1,4 +1,3 @@
-import React from 'react'
 import './Logo.css'
 import { useNavigate } from 'react-router-dom'
 

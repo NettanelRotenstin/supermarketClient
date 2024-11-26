@@ -1,5 +1,5 @@
 import {
-  Action,
+   
   ActionReducerMapBuilder,
   createAsyncThunk,
   createSlice,
@@ -9,10 +9,10 @@ import { dataStatus } from "../../types/redux";
 
 import { IProduct } from "../../types/product";
 import { productState } from "../../types/productState";
-import { useSelector } from "react-redux";
-// import { socket } from "../../App";
+ 
+ 
 
-const port = import.meta.env.VITE_PORT;
+ import.meta.env.VITE_PORT;
 
 const initialData: productState = {
   error: null,

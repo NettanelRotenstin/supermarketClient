@@ -1,7 +1,6 @@
 import React from 'react'
 import { RootState, useAppSelector } from '../../redux/store'
 import Forbiden from '../Forbidden/Forbidden'
-import Forbidden from '../Forbidden/Forbidden'
 import { dataStatus } from '../../types/redux'
 interface Props {
     children: React.ReactNode

@@ -1,9 +1,8 @@
-import React, { useRef, useState } from 'react'
+import   {   useState } from 'react'
 import { categoryEnum } from '../../types/enum/categoryEnum'
-import { Socket } from 'socket.io-client'
 import './admin.css'
 import { socket } from '../../App'
-import { Navigate, useNavigate } from 'react-router-dom'
+import {   useNavigate } from 'react-router-dom'
 
 export default function Admin() {
     const navigate = useNavigate()

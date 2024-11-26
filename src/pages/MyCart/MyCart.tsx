@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./MyCart.css";
 import { RootState, useAppDispatch, useAppSelector } from "../../redux/store";

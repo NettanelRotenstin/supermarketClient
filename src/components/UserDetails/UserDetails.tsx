@@ -1,4 +1,3 @@
-import React from "react";
 import "./UserDetails.css";
 import { useAppSelector } from "../../redux/store";
 import { NavLink } from "react-router-dom";

@@ -1,5 +1,4 @@
 import {
-  Action,
   ActionReducerMapBuilder,
   createAsyncThunk,
   createSlice,
@@ -8,7 +7,7 @@ import { dataStatus } from "../../types/redux";
 import { IUser } from "../../types/user";
 import userState from "../../types/userState";
 
-const port = import.meta.env.VITE_PORT;
+ import.meta.env.VITE_PORT;
 const initialData: userState = {
   error: null,
   status: dataStatus.IDLE,
@@ -179,8 +178,8 @@ const userSlice = createSlice({
         state.user = action.payload as unknown as IUser;
         state.status = dataStatus.SUCCESS;
       })
-      .addCase(checkAuth.rejected, (state, action) => {
-        // state.error = action.error as string;
+      .addCase(checkAuth.rejected, (state) => {
+         
         state.role = undefined;
         state.status = dataStatus.IDLE;
       })

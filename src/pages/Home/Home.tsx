@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import   { useEffect } from 'react'
 import SearchInput from '../../components/SearchInput/SearchInput'
 import CategoryList from '../../components/CategoryList/CategoryList'
 import ProductList from '../../components/ProductList/ProductList'
