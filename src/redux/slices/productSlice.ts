@@ -24,7 +24,7 @@ const fetchAllProducts = createAsyncThunk(
   "products/fetchAll",
   async (_, thunkAPI) => {
     try {
-      const response = await fetch(`http://localhost:${port}/api/products`);
+      const response = await fetch(`https://supermarketserver.onrender.com/api/products`);
       const data = await response.json();
       return data.data;
     } catch (error) {
@@ -40,7 +40,7 @@ const fetchByCategory = createAsyncThunk(
   async (category: string, thunkAPI) => {
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/products/${category}`
+        `https://supermarketserver.onrender.com/api/products/${category}`
       );
       if (!response.ok) {
         return thunkAPI.rejectWithValue(
@@ -60,7 +60,7 @@ const fetchByName = createAsyncThunk(
   async (name: string, thunkAPI) => {
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/products/search/${name}`
+        `https://supermarketserver.onrender.com/api/products/search/${name}`
       );
       // if (!response.ok) {
       //   return thunkAPI.rejectWithValue(

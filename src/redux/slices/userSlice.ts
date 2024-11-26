@@ -20,7 +20,7 @@ const fetchLogin = createAsyncThunk(
   "user/login",
   async (user: { username: string; password: string }, thunkAPI) => {
     try {
-      const response = await fetch(`http://localhost:${port}/api/users/login`, {
+      const response = await fetch(`https://supermarketserver.onrender.com/api/users/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const fetchRegister = createAsyncThunk(
   async (user: { username: string; password: string, creditCard: string }, thunkAPI) => {
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/users/register`,
+        `https://supermarketserver.onrender.com/api/users/register`,
         {
           method: "POST",
           headers: {
@@ -78,7 +78,7 @@ const checkAuth = createAsyncThunk(
     }
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/users/verify`,
+        `https://supermarketserver.onrender.com/api/users/verify`,
         {
           method: "POST",
           headers: {
@@ -109,7 +109,7 @@ const getRecipit = createAsyncThunk(
   async (id: string, thunkAPI) => {
     try {
       const response = await fetch(
-        `http://localhost:${port}/api/users/history`,
+        `https://supermarketserver.onrender.com/api/users/history`,
         {
           headers: {
             "Content-Type": "application/json",

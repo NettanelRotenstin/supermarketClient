@@ -26,7 +26,7 @@ const fetchCart = createAsyncThunk(
       console.log("ftyg");
 
       const response = await fetch(
-        `http://localhost:${port}/api/cart/userCart/${id}`,
+        `https://supermarketserver.onrender.com/api/cart/userCart/${id}`,
         {
           headers: {
             Authorization: token ? token : "",
@@ -53,7 +53,7 @@ const checkout = createAsyncThunk(
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `http://localhost:${port}/api/cart/payment`,
+        `https://supermarketserver.onrender.com/api/cart/payment`,
         {
           method: "PUT",
           headers: {

@@ -17,7 +17,9 @@ import Profile from "./pages/Profile/Profile";
 import { useEffect } from "react";
 import { useAppDispatch } from "./redux/store";
 import { checkAuth } from "./redux/slices/userSlice";
-export const socket = io("http://localhost:3000");
+
+
+export const socket = io("https://supermarketserver.onrender.com");
 function App() {
   const dispatch = useAppDispatch()
   useEffect(() => {
